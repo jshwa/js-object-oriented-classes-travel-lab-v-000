@@ -19,6 +19,6 @@ class Route {
   blocksTravelled() {
     let eastWest = ['1st Avenue', '2nd Avenue', '3rd Avenue', 'Lexington Avenue', 'Park', 'Madison Avenue', '5th Avenue'];
     debugger
-    return eastWest.slice(this.beginningLocation.horizontal, this.endingLocation.horizontal).length + (this.endingLocation.verticle - this.beginningLocation.verticle)
+    return eastWest.slice(this.beginningLocation.horizontal, this.endingLocation.horizontal).length + (this.endingLocation.vertical - this.beginningLocation.vertical)
   }
 }
