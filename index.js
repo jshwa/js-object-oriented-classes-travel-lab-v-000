@@ -22,4 +22,8 @@ class Route {
     let verticalBlocks = parseInt(this.endingLocation.vertical) - parseInt(this.beginningLocation.vertical)
     return Math.abs(horizontalBlocks) + Math.abs(verticalBlocks)
   }
+
+  estimatedTime(peakTime) {
+    return peakTime ? blocksTravelled / 3 : blocksTravelled / 2;
+  }
 }
