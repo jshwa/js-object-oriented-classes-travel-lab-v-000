@@ -24,6 +24,6 @@ class Route {
   }
 
   estimatedTime(peakTime) {
-    return peakTime ? blocksTravelled / 3 : blocksTravelled / 2;
+    return peakTime ? blocksTravelled() / 3 : blocksTravelled() / 2;
   }
 }
